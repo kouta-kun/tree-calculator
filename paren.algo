@@ -1,0 +1,13 @@
+(3 + 2) * 5
+find + at [3],
+search unbalanced close parenthesis, find at [6] so fall through
+find * at [8],
+search unbalanced close parenthesis, not found so binaryop is parse('(3 + 2)', '5')
+'(3 + 2)' starts and ends with () so replace with '3 + 2'
+final tree is (* 5 (+ 3 2))
+
+2 + (3 / 5)
+find + at [2],
+search unbalanced close parenthesis, not found so binaryop is parse('2', '(3 / 5)')
+'(3 / 5)' starts and ends with () so replace with '3 / 5'
+final tree is (+ 2 (/ 3 5))

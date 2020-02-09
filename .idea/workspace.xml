@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
+    <generated>
+      <config projectName="tree_calculator" targetName="tree_calculator" />
+    </generated>
+  </component>
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="fbd6b77c-7d53-4c0e-8102-605a730075ac" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.15.3/CMakeCCompiler.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.15.3/CMakeCXXCompiler.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.15.3/CMakeDetermineCompilerABI_C.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.15.3/CMakeDetermineCompilerABI_CXX.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.15.3/CMakeSystem.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.15.3/CompilerIdC/CMakeCCompilerId.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.15.3/CompilerIdC/a.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.15.3/CompilerIdCXX/CMakeCXXCompilerId.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.15.3/CompilerIdCXX/a.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-environment.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/cmake.check_cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tree_calculator.dir/AddOp.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tree_calculator.dir/CXX.includecache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tree_calculator.dir/Constant.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tree_calculator.dir/DependInfo.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tree_calculator.dir/DivOp.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tree_calculator.dir/MulOp.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tree_calculator.dir/Parser.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tree_calculator.dir/StringUtils.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tree_calculator.dir/SubOp.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tree_calculator.dir/build.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tree_calculator.dir/cmake_clean.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tree_calculator.dir/depend.internal" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tree_calculator.dir/depend.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tree_calculator.dir/flags.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tree_calculator.dir/link.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tree_calculator.dir/main.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tree_calculator.dir/progress.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/tree_calculator" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/tree_calculator.cbp" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1XZtXtoI3skQFWjsg3G0WnICnBM" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/headers" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="tree_calculator" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="tree_calculator" TARGET_NAME="tree_calculator" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="tree_calculator" RUN_TARGET_NAME="tree_calculator">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="fbd6b77c-7d53-4c0e-8102-605a730075ac" name="Default Changelist" comment="" />
+      <created>1581265486740</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1581265486740</updated>
+      <workItem from="1581265490251" duration="7671000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="235" y="38" width="812" height="681" key="#New_File_Extensions" timestamp="1581266240451">
+      <screen x="0" y="27" width="1280" height="693" />
+    </state>
+    <state x="235" y="38" width="812" height="681" key="#New_File_Extensions/0.27.1280.693@0.27.1280.693" timestamp="1581266240451" />
+    <state x="349" y="182" width="601" height="393" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1581270501440">
+      <screen x="0" y="27" width="1280" height="693" />
+    </state>
+    <state x="349" y="182" width="601" height="393" key="#com.intellij.fileTypes.FileTypeChooser/0.27.1280.693@0.27.1280.693" timestamp="1581270501440" />
+    <state x="406" y="95" width="470" height="566" key="#com.intellij.ide.util.MemberChooser" timestamp="1581265884571">
+      <screen x="0" y="27" width="1280" height="693" />
+    </state>
+    <state x="406" y="95" width="470" height="566" key="#com.intellij.ide.util.MemberChooser/0.27.1280.693@0.27.1280.693" timestamp="1581265884571" />
+    <state width="1238" height="161" key="GridCell.Tab.0.bottom" timestamp="1581273297306">
+      <screen x="0" y="27" width="1280" height="693" />
+    </state>
+    <state width="1238" height="161" key="GridCell.Tab.0.bottom/0.27.1280.693@0.27.1280.693" timestamp="1581273297306" />
+    <state width="1238" height="161" key="GridCell.Tab.0.center" timestamp="1581273297306">
+      <screen x="0" y="27" width="1280" height="693" />
+    </state>
+    <state width="1238" height="161" key="GridCell.Tab.0.center/0.27.1280.693@0.27.1280.693" timestamp="1581273297306" />
+    <state width="1238" height="161" key="GridCell.Tab.0.left" timestamp="1581273297306">
+      <screen x="0" y="27" width="1280" height="693" />
+    </state>
+    <state width="1238" height="161" key="GridCell.Tab.0.left/0.27.1280.693@0.27.1280.693" timestamp="1581273297306" />
+    <state width="1238" height="161" key="GridCell.Tab.0.right" timestamp="1581273297306">
+      <screen x="0" y="27" width="1280" height="693" />
+    </state>
+    <state width="1238" height="161" key="GridCell.Tab.0.right/0.27.1280.693@0.27.1280.693" timestamp="1581273297306" />
+    <state width="1238" height="200" key="GridCell.Tab.1.bottom" timestamp="1581272940787">
+      <screen x="0" y="27" width="1280" height="693" />
+    </state>
+    <state width="1238" height="200" key="GridCell.Tab.1.bottom/0.27.1280.693@0.27.1280.693" timestamp="1581272940787" />
+    <state width="1238" height="200" key="GridCell.Tab.1.center" timestamp="1581272940786">
+      <screen x="0" y="27" width="1280" height="693" />
+    </state>
+    <state width="1238" height="200" key="GridCell.Tab.1.center/0.27.1280.693@0.27.1280.693" timestamp="1581272940786" />
+    <state width="1238" height="200" key="GridCell.Tab.1.left" timestamp="1581272940786">
+      <screen x="0" y="27" width="1280" height="693" />
+    </state>
+    <state width="1238" height="200" key="GridCell.Tab.1.left/0.27.1280.693@0.27.1280.693" timestamp="1581272940786" />
+    <state width="1238" height="200" key="GridCell.Tab.1.right" timestamp="1581272940786">
+      <screen x="0" y="27" width="1280" height="693" />
+    </state>
+    <state width="1238" height="200" key="GridCell.Tab.1.right/0.27.1280.693@0.27.1280.693" timestamp="1581272940786" />
+    <state x="0" y="27" width="1024" height="693" key="SettingsEditor" timestamp="1581266931937">
+      <screen x="0" y="27" width="1280" height="693" />
+    </state>
+    <state x="0" y="27" width="1024" height="693" key="SettingsEditor/0.27.1280.693@0.27.1280.693" timestamp="1581266931937" />
+    <state x="306" y="201" key="com.intellij.ide.util.TipDialog" timestamp="1581265490346">
+      <screen x="0" y="27" width="1280" height="693" />
+    </state>
+    <state x="306" y="201" key="com.intellij.ide.util.TipDialog/0.27.1280.693@0.27.1280.693" timestamp="1581265490346" />
+    <state x="417" y="296" width="447" height="164" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1581273945948">
+      <screen x="0" y="27" width="1280" height="693" />
+    </state>
+    <state x="417" y="296" width="447" height="164" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.27.1280.693@0.27.1280.693" timestamp="1581273945948" />
+    <state x="0" y="27" width="513" height="693" key="refactoring.ChangeSignatureDialog" timestamp="1581271050331">
+      <screen x="0" y="27" width="1280" height="693" />
+    </state>
+    <state x="0" y="27" width="513" height="693" key="refactoring.ChangeSignatureDialog/0.27.1280.693@0.27.1280.693" timestamp="1581271050331" />
+  </component>
+</project>
