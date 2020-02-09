@@ -7,6 +7,6 @@ int main() {
     std::string a;
     std::getline(std::cin, a);
     std::shared_ptr<tree::Expression<double>> expr = tree::parse(a);
-    std::cout << a << " = " << expr->evaluate();
+    std::cout << a << " = " << expr->evaluate() << '\n';
     return 0;
 }
