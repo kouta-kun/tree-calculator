@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Tree based Calculator</title>
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+        }
+        #input_region {
+            height: 15%;
+        }
+        #expression_network {
+            height: 85%;
+        }
+    </style>
+</head>
+<body>
+<div id="input_region">
+    <label for="expression">
+        Expression to parse:
+    </label><input type="text" id="expression"/>
+    <button id="parseExpression" type="button" onclick="parseInput()">Parse</button>
+    <br/>
+    <span>The result of the expression is <span id="result"></span></span>
+</div>
+<div id="expression_network"></div>
+<script type="text/javascript">
+    var loaded_visjs = false;
+
+    async function graphInput(expression) {
+        if (!loaded_visjs) {
+            await injectScript("https://unpkg.com/vis-network@7.3.4/standalone/umd/vis-network.min.js");
+            loaded_visjs = true;
+        }
+        graph = expression.serialize_graph();
+        graph = graph.split('\n');
+        edges = graph[0].split(';');
+        edges = edges.filter(x => x.length !== 0);
+        nodes = graph.splice(1);
+        nodelist = [];
+        for (let idx = 0; idx < nodes.length; idx++) {
+            let text = nodes[idx].split("!");
+
+            let node = {id: idx, label: text[0]};
+
+            node.level = Number.parseInt(text[1]);
+
+            nodelist.push(node);
+        }
+        nodes = new vis.DataSet(nodelist);
+        edgelist = [];
+        for (let idx = 0; idx < edges.length; idx++) {
+            nodes_indexes = edges[idx].split(':');
+            edgelist.push({from: Number.parseInt(nodes_indexes[0]), to: Number.parseInt(nodes_indexes[1])});
+        }
+        edges = new vis.DataSet(edgelist);
+        var container = document.getElementById('expression_network');
+        var data = {nodes: nodes, edges: edges};
+        var network = new vis.Network(container, data, {width: '100%', height: '100%', layout: {hierarchical: true}});
+    }
+
+    async function parseInput() {
+        input_expr = document.getElementById('expression');
+        exprObject = Module.parseExpr(input_expr.value);
+        await graphInput(exprObject);
+        output_expr = document.getElementById('result');
+        output_expr.innerText = exprObject.evaluate();
+    }
+
+    function injectScript(src) {
+        return new Promise((resolve, reject) => {
+            const script = document.createElement("script");
+            script.async = true;
+            script.src = src;
+            script.addEventListener('load', resolve);
+            script.addEventListener('error', () => reject('Error loading'));
+            script.addEventListener('abort', () => reject('Aborted'));
+            document.head.appendChild(script);
+        });
+    }
+</script>
+<script type='text/javascript'>
+
+    var Module = {
+        preRun: [],
+        postRun: [],
+        print: (function () {
+            return function (text) {
+                if (arguments.length > 1) text = Array.prototype.slice.call(arguments).join(' ');
+                // These replacements are necessary if you render to raw HTML
+                //text = text.replace(/&/g, "&amp;");
+                //text = text.replace(/</g, "&lt;");
+                //text = text.replace(/>/g, "&gt;");
+                //text = text.replace('\n', '<br>', 'g');
+                console.log(text);
+            };
+        })(),
+        printErr: function (text) {
+            if (arguments.length > 1) text = Array.prototype.slice.call(arguments).join(' ');
+            console.error(text);
+        },
+        setStatus: function (text) {
+            if (!Module.setStatus.last) Module.setStatus.last = {time: Date.now(), text: ''};
+            if (text === Module.setStatus.last.text) return;
+            var m = text.match(/([^(]+)\((\d+(\.\d+)?)\/(\d+)\)/);
+            var now = Date.now();
+            if (m && now - Module.setStatus.last.time < 30) return; // if this is a progress update, skip it if too soon
+            Module.setStatus.last.time = now;
+            Module.setStatus.last.text = text;
+            console.error(text);
+        },
+        totalDependencies: 0,
+        monitorRunDependencies: function (left) {
+            this.totalDependencies = Math.max(this.totalDependencies, left);
+        }
+    };
+    window.onerror = function () {
+        Module.setStatus = function (text) {
+            if (text) Module.printErr('[post-exception status] ' + text);
+        };
+    };
+</script>
+{{{ SCRIPT }}}
+</body>
+</html>

@@ -17,6 +17,9 @@ namespace tree {
                 AddOp(a, b) {}
 
         double evaluate() override;
+
+        ~SubOp() override;
+        int make_graph(std::map<int, std::string> &nodes, std::vector<std::pair<int, int>> &edges) override;
     };
 };
 

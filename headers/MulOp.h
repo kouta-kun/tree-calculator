@@ -14,6 +14,8 @@ namespace tree {
     public:
         MulOp(const std::shared_ptr<Expression<double>> &a, const std::shared_ptr<Expression<double>> &b);
         double evaluate() override;
+        ~MulOp() override;
+        int make_graph(std::map<int, std::string> &nodes, std::vector<std::pair<int, int>> &edges) override;
     };
 }
 

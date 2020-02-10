@@ -13,6 +13,8 @@ namespace tree {
     public:
         double evaluate() override;
         explicit Constant(double v);
+        ~Constant() override;
+        int make_graph(std::map<int, std::string> &nodes, std::vector<std::pair<int, int>> &edges) override;
     };
 }
 

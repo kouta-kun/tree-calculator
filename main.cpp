@@ -8,5 +8,6 @@ int main() {
     std::getline(std::cin, a);
     std::shared_ptr<tree::Expression<double>> expr = tree::parse(a);
     std::cout << a << " = " << expr->evaluate() << '\n';
+    std::cout << expr->serialize_graph() << '\n';
     return 0;
 }

@@ -58,9 +58,22 @@ auto &getParseMap() {
     return map;
 }
 
+static bool string_is_parenthesis_expression(const std::string &input) { // must be math_trimmed before calling
+    if(input[0] != '(' || input[input.size() - 1] != ')') return false;
+    int balance = 1;
+    for(int i = 1; i < input.size() - 1; i++) {
+        switch(input[i]) {
+            case '(': balance++; break;
+            case ')': balance--; break;
+        }
+        if(balance == 0) return false;
+    }
+    return true;
+}
+
 std::shared_ptr<tree::Expression<double>> tree::parse(std::string input) {
     input = math_trim(input);
-    if (input[0] == '(' && input[input.size() - 1] == ')') {
+    if (string_is_parenthesis_expression(input)) {
         input = math_trim(input.substr(1, input.size() - 2));
     }
     std::string::size_type opPos = find_unenclosed_op(input, "+-*/");
